@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MyController {
 
-	@RequestMapping("/Home")
+	@RequestMapping("/")
 	public String home()
 	{
 		return "home";
@@ -18,5 +18,10 @@ public class MyController {
 		return "about";
 	}
 	
+	@RequestMapping("/demo")
+	public String demo()
+	{
+		return "demo";
+	}
 	
 }
